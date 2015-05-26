@@ -1,0 +1,123 @@
+#slider {
+    position: relative;
+	width: 1200px;
+	padding: 0px 10px 0 70px;
+}
+
+#sidebar {
+	float: left;
+	width: 270px;
+}
+
+#main {
+	float: right;
+	padding-top: 40px;
+	width: 920px;	
+}
+
+#header {
+	margin-left: 10px;
+	width: 230px;
+	height: 114px;
+	text-align: center;
+	padding: 65px 0 0 0;
+	background: url(../images/header.jpg) no-repeat top left;
+}
+
+#lang1 {
+    margin-left: 75px;
+    padding-bottom: 40px;
+}
+#lang2 {
+    margin-left: 25px;
+    padding-bottom: 40px;
+}
+#lang3{
+    padding: 20px 0 0 0;
+}
+#cv{
+    width: 230px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#content { 
+	height: 655px;
+	width: 920px;
+	background: url(../images/content.jpg) no-repeat;
+}
+
+.scroll {
+    height: 655px;
+    width: 920px;
+    overflow: auto;
+/*  overflow-x: hidden; */
+    position: relative;
+    clear: left;
+}
+
+.scrollContainer div.panel {
+    padding: 30px;
+    height: 595px;
+    width: 860px;
+}
+
+ul.navigation {
+	width: 270px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	text-align: left;
+}
+
+ul.navigation li {
+    display: inline-block;
+    margin: 0px;
+	padding: 0;
+}
+
+ul.navigation a {
+	display: block;
+	width: 190px;
+	height: 33px;
+	padding: 12px 0 0 80px;
+	margin-bottom: 5px;
+	color: #8a8980;
+	font-size: 16px;
+	font-weight: normal;
+    text-decoration: none;
+	position: relative;
+}
+
+ul.navigation a .ui_icon { position: absolute; top: 0; left: 15px; width: 40px; height: 40px; }
+
+ul.navigation a .home            { background: url(../images/home.png) no-repeat; }
+ul.navigation a .recherche       { background: url(../images/sujet.png) no-repeat; }
+ul.navigation a .publications    { background: url(../images/publi.png)  no-repeat; }
+ul.navigation a .projets         { background: url(../images/enseignements.png)  no-repeat; }
+ul.navigation a .enseignements   { background: url(../images/enseignements.png) no-repeat; }
+ul.navigation a .formations      { background: url(../images/formations.png) no-repeat; }
+ul.navigation a .experiences_pro { background: url(../images/experiences_pro.png) no-repeat; }
+ul.navigation a .contactus       { background: url(../images/contact.png) no-repeat; }
+ul.navigation a .download        { background: url(../images/download.png) no-repeat; }
+
+ul.navigation a:hover, ul.navigation a.selected { 	color: #201f1b; background: url(../images/menu_hover.png) no-repeat left;}
+
+ul.navigation a:hover .home, ul.navigation a.selected .home { 	                    background: url(../images/home_hover.png) no-repeat;      }
+ul.navigation a:hover .recherche, ul.navigation a.selected .recherche { 	        background: url(../images/sujet_hover.png) no-repeat;   }
+ul.navigation a:hover .publications, ul.navigation a.selected .publications { 	    background: url(../images/publi_hover.png) no-repeat;  }
+ul.navigation a:hover .projets, ul.navigation a.selected .projets { 	            background: url(../images/enseignements_hover.png) no-repeat;  }
+ul.navigation a:hover .enseignements, ul.navigation a.selected .enseignements { 	background: url(../images/enseignements_hover.png) no-repeat; }
+ul.navigation a:hover .formations, ul.navigation a.selected .formations { 	        background: url(../images/formations_hover.png) no-repeat; }
+ul.navigation a:hover .experiences_pro, ul.navigation a.selected .experiences_pro { background: url(../images/experiences_pro_hover.png) no-repeat; }
+ul.navigation a:hover .contactus, ul.navigation a.selected .contactus {             background: url(../images/contact_hover.png) no-repeat;   }
+ul.navigation a:hover .download, ul.navigation a.selected .download {               background: url(../images/download_hover.png) no-repeat;   }
+
+ul.navigation a:focus { outline: none;}
+
+.scrollButtons { position: absolute; top: 300px; cursor: pointer; width: 0; height: 0; }
+.scrollButtons.left { left: -50px; }
+.scrollButtons.right { right: -1000px;}
+
+.hide { display: none;}
