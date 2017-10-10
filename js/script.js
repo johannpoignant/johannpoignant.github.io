@@ -1,6 +1,12 @@
 $(document).ready(function (){
   
-  /* Navigation */
+  $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+    var page = $(this).attr('href'); // Page cible
+    var speed = 750; // Durée de l'animation (en ms)
+    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+    return false;
+  });
+
   $('#page-content section').waypoint(function(direction) {
     if(direction=='down') {
       var sectionName = '#'+$(this).attr('id');
@@ -23,9 +29,6 @@ $(document).ready(function (){
     }
   },{ offset: function() { return -$(this).height()+1; }});
 
-  /* Smooth Scrolling */
-  $.localScroll({ });
-  
   /* Animations */
   jQuery('.animated').appear();
   $('.fade-in').appear(function() { jQuery(this).each(function(){ jQuery(this).addClass('fade-in-animation') }); });
@@ -39,4 +42,6 @@ $(document).ready(function (){
   $('.zoom-out').appear(function() { jQuery(this).each(function(){ jQuery(this).addClass('zoom-out-animation') }); });
   $('.bounce-in').appear(function() { jQuery(this).each(function(){ jQuery(this).addClass('bounce-in-animation') }); });  
   $('.flip-in').appear(function() { jQuery(this).each(function(){ jQuery(this).addClass('flip-in-animation') }); });
+  
 });
+
