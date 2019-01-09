@@ -422,6 +422,10 @@ ul.social-icons li {
   display: inline-block;
 }
 
+#LanguageVersion {
+  border: 0px solid rgba(255,255,255,0);
+}
+
 ul.social-icons li a {
   display: block;
   width: 36px;
@@ -438,6 +442,19 @@ ul.social-icons li a i {
   -webkit-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
   opacity: .4;
+}
+
+#scholarIcon {
+  margin-top: 17px;
+  font-size: 15px;
+  line-height: 15px;
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  opacity: .4;
+  text-align: center;
+  height: 12;
 }
 
 ul.social-icons li a:hover i {
